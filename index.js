@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.listen(process.env.PORT || 2000, () => {
-    console.log('Server is running on port 3000');
+const PORT = process.env.PORT || 2000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
